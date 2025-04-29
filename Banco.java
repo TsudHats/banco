@@ -26,7 +26,7 @@ public class Banco {
                 } // Observei que, caso ele fique depois da verificação do login, precisaria colocar uma resposta novamente, dessa forma ele acabaria assim que acabasse as tentativas.
 
                 if("admin".equals(usuario) && senha == 1234){ // Pesquisado para saber como utilizar variável string em if
-                    System.out.println("Acesso Liberado");
+                    System.out.println("Acesso Liberado\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
                     break;
 
                 } else{
@@ -50,10 +50,11 @@ public class Banco {
                 
             }
 
+        float saldo = 1000.00f; // Valor inicial de R$1000.00
+
         // If fazendo com que caso o usuario e senha esteja correto, ele libere e continue o código, se não, ele nega e para de rodar
         while (true){
-            float saldo, menu, saque, deposito, transferencia;
-            saldo = 1000.00f; // Valor inicial de R$1000.00
+            float  menu, saque, deposito, transferencia;
 
             System.out.println("\nConsultar Saldo 1\nRealizar Saque 2\nRealizar Depósito 3\nRealizar Transferência 4\nSair 5");
             menu = ler.nextFloat();
